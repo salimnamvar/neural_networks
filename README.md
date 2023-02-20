@@ -6,8 +6,10 @@ model networks mathematically.
 
 # Sessions
 - Introduction to Neural Networks - Models of a Neuron
+  
+  - [Slides](https://1drv.ms/p/s!AshLtNFNHRW_iQb18HJ2Nz-BrPSM) are describing the neuron modeling.
 
 - Introduction to Neural Networks - MLP
-    - The session is going to cover the theoretical and coding related to a `Multi-Layer Perceptron Neural Network`.
+    - [Slides](https://1drv.ms/p/s!AshLtNFNHRW_iQX18HJ2Nz-BrPSM) are covering the theoretical and coding related to a `Multi-Layer Perceptron Neural Network`.
     - The related implementation from scratch is [ex0_mlp](examples/ex0_mlp.py).
 
