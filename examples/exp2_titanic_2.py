@@ -62,21 +62,23 @@ class MLP(nn.Module):
     def __init__(self):
         super(MLP, self).__init__()
         self.fc1 = nn.Linear(7, 64)
+        self.drop = nn.Dropout2d(0.1)
         self.fc2 = nn.Linear(64, 32)
         self.fc3 = nn.Linear(32, 2)
 
     def forward(self, x):
         x = torch.relu(self.fc1(x))
+        x = self.drop(x)
         x = torch.relu(self.fc2(x))
         x = self.fc3(x)
         return x
 
 
 # Parameters
-epochs = 100
+epochs = 1000
 model = MLP()
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+optimizer = optim.Adam(model.parameters(), lr=0.0001)
 # endregion Neural Network Hyper-Parameters
 
 # region Training-------------------------------------------------------------------------------------------------------
