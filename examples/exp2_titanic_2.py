@@ -17,8 +17,7 @@ from tqdm import tqdm
 
 
 # region Load Data------------------------------------------------------------------------------------------------------
-data = pd.read_csv(
-    'E:\\LEARNING\\Priciple Neural_Networks Engineering\\Codes\\neural_networks\\data\\titanic\\train.csv')
+data = pd.read_csv('../data/titanic/train.csv')
 # endregion Load Data
 
 # region Preprocessing--------------------------------------------------------------------------------------------------
