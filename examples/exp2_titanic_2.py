@@ -76,7 +76,7 @@ class MLP(nn.Module):
 epochs = 100
 model = MLP()
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.01)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 # endregion Neural Network Hyper-Parameters
 
 # region Training-------------------------------------------------------------------------------------------------------
