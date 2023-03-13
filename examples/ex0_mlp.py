@@ -46,8 +46,8 @@ n2 = 3
 n3 = 1
 
 # Training Settings
-eta = 0.05
-epochs = 1000
+eta = 0.4
+epochs = 100
 initial_weights_range = (-1, 1)
 
 # Network Initialization
@@ -130,7 +130,7 @@ for iteration in tqdm(range(epochs)):
     # Total train error
     mse_train[0, iteration] = np.square(np.subtract(train_targets,train_outputs)).mean()
 
-    # Train Error
+    # Evaluation Error
     eval_errors = np.zeros((1, num_eval_data))
     eval_outputs = np.zeros((1, num_eval_data))
     for i, (x, d) in enumerate(zip(eval_inputs, eval_targets)):
